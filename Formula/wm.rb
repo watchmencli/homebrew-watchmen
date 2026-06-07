@@ -29,6 +29,24 @@ class Wm < Formula
       bin.install "wm-community-linux-x86_64" => "wm"
     end
   end
+  def caveats
+    <<~EOS
+      Verify this build with Sigstore (cosign keyless + Rekor transparency log):
+
+        wm verify-self
+
+      The `wm verify-self` subcommand fetches the cosign bundle from
+      releases.trywatchmen.cloud and runs `cosign verify-blob` inline
+      when cosign is on PATH. Use `wm verify-self --offline` to print
+      the canonical recipe without touching the network.
+
+      The cosign bundles live at:
+        https://releases.trywatchmen.cloud/download/community/<version>/<platform>.cosign.bundle
+
+      See https://trywatchmen.cloud/trust for the full trust posture.
+    EOS
+  end
+
   test do
     assert_match "WatchmenCLI Community", shell_output("#{bin}/wm version")
   end
