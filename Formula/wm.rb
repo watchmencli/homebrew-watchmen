@@ -1,9 +1,9 @@
 class Wm < Formula
-  desc "Developer environment intelligence platform — 13 scanners, 24 MCP tools, zero dependencies"
+  desc "On-device developer environment intelligence — scanners, retrieval, MCP, signed releases"
   homepage "https://trywatchmen.cloud"
   version "1.6.7"
   license "MIT"
-  # TH-P0-06 — Versioned, per-platform-pinned URLs.
+  # Versioned, per-platform-pinned URLs.
   # Versioned URLs make the formula content cryptographically pin
   # a specific build. Homebrew caches by URL, so when a new version
   # ships the new formula's URLs break the cache cleanly.
