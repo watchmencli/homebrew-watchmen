@@ -1,7 +1,7 @@
 class Wm < Formula
   desc "Developer environment intelligence platform — 13 scanners, 24 MCP tools, zero dependencies"
   homepage "https://trywatchmen.cloud"
-  version "2.2.11"
+  version "2.2.12"
   license "MIT"
   # TH-P0-06 — Versioned, per-platform-pinned URLs.
   # Versioned URLs make the formula content cryptographically pin
@@ -9,14 +9,14 @@ class Wm < Formula
   # ships the new formula's URLs break the cache cleanly.
   on_macos do
     on_arm do
-      url "https://releases.trywatchmen.cloud/download/community/2.2.11/macos-arm64"
-      sha256 "86d71adeace82fd10e16d0f7492f7297aa7a482944fb90a61c016fe323149a0e"
+      url "https://releases.trywatchmen.cloud/download/community/2.2.12/macos-arm64"
+      sha256 "97cc3daabaef7380c5161bf50f0ad0acda26ff74256f19f83d9560f75384d39c"
     end
   end
   on_linux do
     on_intel do
-      url "https://releases.trywatchmen.cloud/download/community/2.2.11/linux-x86_64"
-      sha256 "2c08eff4837c267dc787fb2c7059d1408ab321684acc08fbacc8aa70465ae3d0"
+      url "https://releases.trywatchmen.cloud/download/community/2.2.12/linux-x86_64"
+      sha256 "69be6f701ec20a639341fb8350edb00762e325aa991dff9b078a04f44b0eaaa6"
     end
   end
   def install
