@@ -1,7 +1,7 @@
 class Wm < Formula
   desc "Machine and AI governance CLI with an MCP server, zero dependencies"
   homepage "https://trywatchmen.cloud"
-  version "2.8.7"
+  version "2.8.8"
   license "MIT"
   # TH-P0-06 — Versioned, per-platform-pinned URLs.
   # Versioned URLs make the formula content cryptographically pin
@@ -9,14 +9,14 @@ class Wm < Formula
   # ships the new formula's URLs break the cache cleanly.
   on_macos do
     on_arm do
-      url "https://releases.trywatchmen.cloud/download/community/2.8.7/macos-arm64"
-      sha256 "5e801694fef4fe9c200fa68f60243c0fe31b200a80d22fac49880a945f258436"
+      url "https://releases.trywatchmen.cloud/download/community/2.8.8/macos-arm64"
+      sha256 "71434c69b1d494f7234a22af4911a50e5c3de7c0cb753c20f8829d37bf6b281c"
     end
   end
   on_linux do
     on_intel do
-      url "https://releases.trywatchmen.cloud/download/community/2.8.7/linux-x86_64"
-      sha256 "80fd645080849f840e44fb0a15d250a5ff6efeb00d1267a15ce89358a464ac7f"
+      url "https://releases.trywatchmen.cloud/download/community/2.8.8/linux-x86_64"
+      sha256 "f6db5936346ff8c71a8a21584307f43c4a0d307f71e3653af28ac79ba59f3cbe"
     end
   end
   def install
